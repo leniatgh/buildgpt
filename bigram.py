@@ -12,6 +12,8 @@ device = 'cuda' if torch.cuda.is_available() else 'xpu' if torch.xpu.is_availabl
 eval_iters = 200
 # ------------
 
+print(f"running on device: {device}")
+
 torch.manual_seed(1337)
 
 # wget https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
